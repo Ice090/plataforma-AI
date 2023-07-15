@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500&display=swap');
+body {
+    background: url(../image/background.png);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.container {
+    background-color: rgba(2, 6, 23, 0.80);
+    border: 1px solid #334155;
+    border-radius: 20px;
+    width: 80vw;
+    height: 90vh;
+    transition: all 500ms;
+}
+
+.content {
+    gap: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 40px;
+    gap: 24px;
+}
+
+.header img {
+    background-color: #0F172A;
+    border-radius: 8px;
+    border: 1px solid #334155;
+    width: 45px
+}
+
+.header h2 {
+    color: #F8FAFC;
+    font-weight: 500;
+    font-size: 32px;
+    margin: 0;
+    text-align: center;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+.buttons button {
+    background-color: #0F172A;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 16px;
+    border: 1px solid #334155;
+    width: 50%;
+    padding: 1rem;
+    cursor: pointer;
+    transition: all 500ms;
+    height: 90%;
+    max-height: 70px;
+}
+
+.buttons button:hover {
+    background-color: #131e39;
+    border: 1px solid #3e4d61;
+    transition: all 500ms;
+    transform: scale(1.05);
+}
+
+.button-nav {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.button-nav span {
+    font-size: 18px;
+    font-weight: 500;
+    color: #F8FAFC;
+}
+
+hr {
+    width: 90%;
+    border: 1px solid #334155;
+}
+
+.input-message {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 10px;
+}
+
+.input-message input {
+    width: 60vw;
+    background-color: #0F172A;
+    outline: none;
+    color: #E2E8F0;
+    padding: 1rem;
+    border: 1px solid #334155;
+    border-radius: 14px;
+    padding-left: 45px;
+    transition: all 500ms;
+}
+
+.input-message input::placeholder {
+    color: #E2E8F0;
+}
+
+.input-image {
+    position: relative;
+}
+
+.input-image img {
+    position: absolute;
+    padding: 9px;
+    cursor: pointer;
+}
+
+.input-image img:hover {
+    transition: all 500ms;
+    transform: scale(1.2);
+}
+
+
+.input-message button {
+    background-color: #0F172A;
+    border-radius: 14px;
+    border: 1px solid #334155;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: all 500ms;
+}
+
+.input-message button:hover {
+    transition: all 500ms;
+    transform: scale(1.2);
+}
+
+@media screen and (max-width: 850px) {
+    .container {
+        height: 80vh;
+        width: 90vw;
+    }
+
+    .button-nav img {
+        transform: scale(0.8);
+    }
+
+    .buttons button img {
+        transform: scale(0.8);
+    }
+
+    .header h2 {
+        font-size: 22px;
+    }
+
+    .buttons button {
+        padding: 0.6rem;
+    }
+}
+
+@media screen and (max-width: 670px) {
+    
+    .container {
+        height: 80vh;
+        width: 90vw;
+    }
+
+    .header h2 {
+        font-size: 20;
+    }
+
+    .button-nav span {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 530px) {
+    .container {
+        height: 100vh;
+        width: 100vw;
+        border-radius: 0;
+        display: flex;
+        align-items: center;
+        text-align: center;
+    }
+}
